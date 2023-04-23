@@ -51,5 +51,21 @@ public class SendKeys_checkBox_RadioBtn {
         Select selectYear= new Select(dropDownYear);
         //selecting byvisibleText mean the text inside the option tag
         selectYear.selectByVisibleText("1995");
+
+        //using isDisplay to check if the element exist or not
+        //if the element is not included in the html file it will automatically return error because
+        //findElement method will not find the element that we want to search
+        //this used to find for example a spinner (loading element after charging a page)
+        //if the spinner in css (display:none) then isDisplay return false
+        boolean emailDisplayed= driver.findElement(By.xpath("//*[@name=\"reg_email__\"]")).isDisplayed();
+        System.out.println("Display Status: "+ emailDisplayed);
+
+
+        //using isEnabled to check if the element Enabled or not
+        //if the element is not Enabled then you can't for example tap inside of the input text
+
+        boolean emailEnabled= driver.findElement(By.xpath("//*[@name=\"reg_email__\"]")).isEnabled();
+        System.out.println("Enabled status: "+ emailEnabled);
+
     }
 }

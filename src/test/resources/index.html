@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>The Basic Language of the Web: HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -97,7 +98,7 @@
     </article>
 
     <aside>
-        <h4>Related posts</h4>
+        <h4 class="post" id="post" data-testid="post-id">Related posts</h4>
 
         <ul>
             <li>
@@ -117,15 +118,35 @@
             </li>
         </ul>
     </aside>
-    <select>
-        <option value="tunis">Tunis</option>
-        <option value="France">France</option>
-        <option value="italie">Italie</option>
-    </select>
+
 
     <br>
-    <input type="radio" name="Radio">Achref
-    <input type="radio" name="Radio">Ahmed
+    <div class="form">
+        <div>
+            <input type="radio" name="Radio" data-testid="id1">Achref
+            <input type="radio" name="Radio" data-testid="id2">Ahmed
+
+        </div>
+     <div>
+         <select>
+             <option value="tunis">Tunis</option>
+             <option value="France">France</option>
+             <option value="italie">Italie</option>
+         </select>
+
+     </div>
+        <div class="fields">
+            <label>
+                Email
+            </label>
+        <input type="text" placeholder="enter your email " id="email" name="email" class="inputField" disabled>
+            <label>
+                Name
+            </label>
+            <input type="text" placeholder="enter your name " id="name" name="name" class="inputField">
+        </div>
+    </div>
+
 
     <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
     </body>
