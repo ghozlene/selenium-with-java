@@ -5,6 +5,18 @@
     <meta charset="UTF-8" />
     <title>The Basic Language of the Web: HTML</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" defer>
+function mouseclick(ele, e) {
+if (e.type == 'click') {
+alert("left click detected");
+ $(this).attr('href', 'https://www.google.com');
+}
+    if (e.type == 'contextmenu') {
+    alert("Right click detected");
+    $(this).attr('href', 'https://www.youtube.com');
+}
+}
+</script>
 </head>
 
 <body>
@@ -144,6 +156,14 @@
                 Name
             </label>
             <input type="text" placeholder="enter your name " id="name" name="name" class="inputField">
+        </div>
+        <div class="links-test">
+            a link for test the right click :
+            <a href="https://google.com"
+               onclick="mouseclick(this, event)" class="link-google" id="link-google"
+               >google</a>
+            <a href="https://youtbe.com"
+               oncontextmenu="mouseclick(this, event)" class="link-youtube" id="link-youtube" >Youtube</a>
         </div>
     </div>
 
