@@ -22,7 +22,7 @@ public class DragAndDropFromWebsite {
 
         //this is just need because we need to go to the frame that contain our elements
         //because our elements are inside of frame if we don't switch to goe inside the frame
-        //the source and the destination elements will not be appear and an error will be return
+        //the source and the destination elements will not be appeared and an error will be return
         driver.switchTo().frame(driver.findElement(By.xpath("//*[@id=\"content\"]/iframe")));
         WebElement source= driver.findElement(By.xpath("//div[@id=\"draggable\"]"));
         System.out.println(source.getText());

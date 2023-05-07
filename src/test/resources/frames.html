@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frames</title>
+    <link rel="stylesheet" href="frames.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body noselect padded outlines="0" bg-grid>
+<label>Card scale&nbsp;<input type="range" min="0.05" max="1" value="0.5" step="0.01"
+                              onchange="javascript:document.documentElement.style.setProperty('--base-scale', this.value)">&nbsp;</label>
+
+<h3 band>click the card headers</h3>
+
+<div id="cardlist" band>
+
+    <input id="card-picsum" class="scale-switch" type="checkbox" gone />
+    <div class="view nobar" scale="0.5">
+        <label for="card-picsum" class="view-header">Frame1</label>
+        <div class="view-panel nobar-scroller">
+            <div class="view-content">
+                <iframe src="https://chat.openai.com/chat/" loading="lazy" id="frame1"></iframe>
+            </div>
+        </div>
+        <footer class="view-footer">picsum photos</footer>
+    </div>
+
+    <input id="card-mobile" class="scale-switch" type="checkbox" gone />
+    <div class="view nobar" scale="0.5">
+        <label for="card-mobile" class="view-header">Frame2</label>
+        <div class="view-panel nobar-scroller">
+            <div class="view-content">
+                <iframe src="https://gogoanime.so/" loading="lazy" id="frame2"></iframe>
+            </div>
+        </div>
+        <footer class="view-footer">Semi Mobile</footer>
+    </div>
+
+    <input id="card-flexbox" class="scale-switch" type="checkbox" gone />
+    <div class="view nobar" scale="0.5">
+        <label for="card-flexbox" class="view-header">Frame3</label>
+        <div class="view-panel nobar-scroller">
+            <div class="view-content">
+                <iframe src="https://w15.mangafreak.net/" loading="lazy" id="frame3"></iframe>
+            </div>
+        </div>
+        <footer class="view-footer">Flexbox N-grid</footer>
+    </div>
+
+    <input id="card-CSSSQRT" class="scale-switch" type="checkbox" gone />
+    <div class="view nobar" scale="0.5">
+        <label for="card-CSSSQRT" class="view-header">Frame4</label>
+        <div class="view-panel nobar-scroller">
+            <div class="view-content">
+                <iframe src="https://codepen.io/renevanderlende/full/poZJqzp" loading="lazy" id="frame4"></iframe>
+            </div>
+        </div>
+        <footer class="view-footer">CSS SQRT(n)</footer>
+    </div>
+    <!--
+            <input id="card-lorem" class="scale-switch" type="checkbox" gone />
+            <div class="view nobar" scale="0.5">
+                <label for="card-lorem" class="view-header">Lorem Ipsum</label>
+                <div class="view-panel nobar-scroller">
+                    <div class="view-content">
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, exerci dolorem est ad. Sumo rebum prompta vim ad. Legendos expetendis id sed. Ex ius quem accusamus, pri et
+                            deleniti copiosae.</p>
+                        <p>Cu vel debet nobis, repudiare deseruisse reprehendunt usu ad. Ex elit idque nam. Omnis munere detraxit mei te, eu labore appareat verterem
+                            est. Mel ex oporteat consectetuer.</p>
+                        <p>Pro ea nonumy integre, mel at solum corpora. Id viris audiam repudiare cum, pri dolore appareat ex, per propriae detracto tacimates ex.
+                            Elitr sapientem quo et, usu suas porro tibique cu. Iusto causae eos et, tota principes interesset et eos. Similique intellegam cum ei, unum
+                            qualisque mel et, regione verterem delicatissimi qui ut. Aliquam incorrupte ea pro, vel veritus consequat id.</p>
+                        <p>Pri te amet electram. Tation commodo minimum cu pri, utamur minimum id pri. No legimus atomorum vim. Vix id putent iuvaret salutandi, mel
+                            phaedrum conceptam ut.</p>
+                        <p>Nam id utinam referrentur, similique intellegebat ad mel, eu nobis aeterno qui. Ad quodsi cetero sed, deserunt disputando nam an, veri
+                            viderer consetetur vel an. Zril vivendo pro no, oratio scripta quo eu, aeque elaboraret duo et. Ea nonumy essent sed, enim cetero pri an. An
+                            zril facete ius.</p>
+                        <p>Id delectus fabellas praesent duo, ei vim consequat democritum. An mei tamquam iuvaret philosophia, amet vitae usu at. Errem equidem eam
+                            eu, per sumo audire vocibus an, ridens laoreet duo ut. Pro te velit efficiendi, an ius tation noster. Inimicus argumentum eu quo, no invenire
+                            mandamus philosophia nam. Simul placerat efficiendi eu eum.</p>
+                        <p>Sed ex quas mazim intellegam. Ad harum dicant sanctus vis, etiam assum complectitur his ex, solum noster instructior id mei. His brute
+                            facilis adversarium eu, vix officiis persecuti incorrupte te. Te odio mundi sanctus has. Cetero blandit pertinax te cum, cum solet
+                            theophrastus ex.</p>
+                        <p>Erant iudico ei nam, no nihil malorum vituperatoribus mel. Graeci pericula eos cu, ad oratio partem abhorreant quo. No aeterno fastidii
+                            legendos vel, pro vide dissentiet an. Possit epicurei definiebas eos no, eum no diam augue. Sed ex tritani diceret tacimates, ea latine
+                            singulis interpretaris vis, vel quaestio definiebas at.</p>
+                        <p>Ei scripta imperdiet has. Wisi vivendo pri te, mel lorem quodsi sensibus ne, in cum eripuit platonem evertitur. Vis an quis possit
+                            voluptatibus. Eum fastidii appareat id. Augue elitr bonorum per at, nam ne veri possit scribentur.</p>
+                        <p>An probo etiam sit, ut agam epicuri similique eum. Dicam iuvaret in mel, no has consul causae vocibus, ad veniam aperiam voluptatibus sed.
+                            Posse inimicus necessitatibus pri an, no sed invidunt laboramus. Nostrum sadipscing ex sea, ad pro idque suscipiantur.</p>
+                    </div>
+                </div>
+                <footer class="view-footer">lorem ipsum</footer>
+            </div>
+    -->
+</div>
+
+</body>
+</html>
